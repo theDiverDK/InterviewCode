@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterviewCode", "InterviewCode\InterviewCode.csproj", "{766E2E06-1D23-408D-A1DF-EFEC3C248FBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterviewCodeUnitTest", "InterviewCodeUnitTest\InterviewCodeUnitTest.csproj", "{B711E747-CA16-4AFA-B03E-14D9C764A205}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{766E2E06-1D23-408D-A1DF-EFEC3C248FBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{766E2E06-1D23-408D-A1DF-EFEC3C248FBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{766E2E06-1D23-408D-A1DF-EFEC3C248FBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{766E2E06-1D23-408D-A1DF-EFEC3C248FBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B711E747-CA16-4AFA-B03E-14D9C764A205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B711E747-CA16-4AFA-B03E-14D9C764A205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B711E747-CA16-4AFA-B03E-14D9C764A205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B711E747-CA16-4AFA-B03E-14D9C764A205}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
