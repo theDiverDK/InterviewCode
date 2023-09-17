@@ -3,9 +3,9 @@ using InterviewCode.Filters.Generics;
 
 namespace InterviewCode.Filters;
 
-public class SerialNumberStartsWith9Filter<T> : IFilter<T> where T : IDevice
+public class SerialNumberStartsWith9Filter<T> : FilterBase<T> where T : IDevice
 {
-    public IEnumerable<T> Apply(IEnumerable<T> items)
+    protected override IEnumerable<T> ApplyFilter(IEnumerable<T> items)
     {
         return items.Where(Filter);
     }

@@ -2,7 +2,7 @@ using InterviewCode.Device;
 
 namespace InterviewCode.Filters.Generics;
 
-public abstract class FilterBase<T> : IFilter<T> where T : IDevice
+public abstract class FilterBase<T>  where T : IDevice
 {
     public IEnumerable<T> Apply(IEnumerable<T> items)
     {
