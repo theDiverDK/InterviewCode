@@ -23,11 +23,18 @@ public class SerialNumberExactly10DigitsLongFilterTest
         var filteredDevices = filter.Apply(devices).ToList();
 
         // Assert
-        Assert.Equal(2, filteredDevices.Count);
+        Assert.Equal(4, filteredDevices.Count);
         Assert.Equal(1234567890, filteredDevices[0].SerialNumber);
         Assert.Equal("Device 1", filteredDevices[0].DeviceName);
 
-        Assert.Equal(1234567893, filteredDevices[1].SerialNumber);
-        Assert.Equal("Device 2", filteredDevices[1].DeviceName);
+        Assert.Equal(1234567891, filteredDevices[1].SerialNumber);
+        Assert.Equal("", filteredDevices[1].DeviceName);
+        
+        Assert.Equal(1234567892, filteredDevices[2].SerialNumber);
+        Assert.Null(filteredDevices[2].DeviceName);
+
+        Assert.Equal(1234567893, filteredDevices[3].SerialNumber);
+        Assert.Equal("Device 2", filteredDevices[3].DeviceName);
+
     }
 }

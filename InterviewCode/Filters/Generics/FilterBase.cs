@@ -13,6 +13,11 @@ public abstract class FilterBase<T>  where T : IDevice
 
         return ApplyFilter(items);
     }
+    
+    private IEnumerable<T> ApplyFilter(IEnumerable<T> items)
+    {
+        return items.Where( Filter);
+    }
 
-    protected abstract IEnumerable<T> ApplyFilter(IEnumerable<T> items);
+    protected abstract bool Filter(T device);
 }
