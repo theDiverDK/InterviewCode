@@ -11,13 +11,8 @@ public abstract class FilterBase<T>  where T : IDevice
             throw new ArgumentNullException(nameof(items), "The 'items' parameter cannot be null.");
         }
 
-        return ApplyFilter(items);
-    }
-    
-    private IEnumerable<T> ApplyFilter(IEnumerable<T> items)
-    {
         return items.Where( Filter);
     }
-
+    
     protected abstract bool Filter(T device);
 }
